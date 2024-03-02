@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>odin-recipes</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1>"Odin Recipes"</h1>
-        <a href="./lasagna.html"><h1>Lasagna</h1>
-        <a href="./pizza.html"><h1>Pizza</h1></a>
-        <a href="./burger.html"><h1>Burger</h1></a>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #e74c3c;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .recipe-link {
+            display: block;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .recipe-link:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Odin Recipes</h1>
+        <a href="./lasagna.html" class="recipe-link"><h2>Lasagna</h2></a>
+        <a href="./pizza.html" class="recipe-link"><h2>Pizza</h2></a>
+        <a href="./burger.html" class="recipe-link"><h2>Burger</h2></a>
+    </div>
+</body>
 </html>
